@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4e7da; /* Cor de fundo suave para o corpo da página */
+    color: #5a3e36; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+}
+
+/* Cabeçalho e navegação */
+header {
+    background-color: #d5b29c; /* Cor de fundo do cabeçalho */
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+    border-bottom: 2px solid #c6a28c; /* Borda inferior para separar do conteúdo abaixo */
+}
+
+/* Navegação */
+nav {
+    margin-bottom: 30px; /* Espaçamento abaixo da navegação */
+}
+
+nav button {
+    background-color: #f5e1da; /* Cor de fundo do botão */
+    color: #5a3e36; /* Cor do texto no botão */
+    border: 2px solid #d5b29c; /* Borda do botão */
+    padding: 10px 15px; /* Tamanho do botão */
+    margin: 5px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: 0.3s; /* Efeito de transição */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Efeito ao passar o mouse no botão */
+nav button:hover {
+    background-color: #eac8b4; /* Cor de fundo quando o mouse passa por cima */
+    color: #5a3e36; /* Cor do texto ao passar o mouse */
+}
+
+/* Container dos conversores */
+.converter-container {
+    background: white; /* Cor de fundo branca para o container */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do container */
+    max-width: 400px; /* Largura máxima do container */
+    margin: 20px auto; /* Centraliza o container na página com margem */
+    border: 2px solid #d5b29c; /* Borda para separar a área do conversor */
+}
+
+h2 {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    color: #5a3e36; /* Cor do título */
+}
+
+/* Inputs e Seletores */
+input, select, textarea {
+    width: 100%; /* Largura total para os campos */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin: 10px 0; /* Margem entre os campos */
+    border: 1px solid #c6a28c; /* Borda dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+    background: #f8ebe6; /* Cor de fundo suave para os campos */
+    color: #5a3e36; /* Cor do texto nos campos */
+}
+
+/* Botões */
+button {
+    background: linear-gradient(45deg, #eac8b4, #d5b29c); /* Gradiente de fundo */
+    color: #5a3e36; /* Cor do texto no botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 15px; /* Tamanho do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: 0.3s; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background: linear-gradient(45deg, #d5b29c, #c6a28c); /* Cor de fundo ao passar o mouse */
+}
+
+/* Mensagens de resultado */
+#result, #submissionStatus {
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-top: 10px; /* Espaçamento acima das mensagens */
+}
+
+/* Formulário de Contato */
+form {
+    background: white; /* Cor de fundo branca para o formulário */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do formulário */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário */
+    border: 2px solid #d5b29c; /* Borda para separar a área do formulário */
+}
+
+form fieldset {
+    border: none; /* Remove a borda padrão do fieldset */
+    padding: 0; /* Remove o padding do fieldset */
+}
+
+form legend {
+    font-size: 18px; /* Tamanho do título do formulário */
+    font-weight: bold; /* Título em negrito */
+    color: #8d6658; /* Cor do título */
+}
+
+form label {
+    display: block; /* Faz o label ocupar a linha inteira */
+    font-weight: bold; /* Deixa o texto do label em negrito */
+    margin-top: 10px; /* Espaçamento acima dos labels */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px; /* Espaçamento acima do rodapé */
+    padding: 10px; /* Espaçamento interno */
+    background: #d5b29c; /* Cor de fundo do rodapé */
+    color: #5a3e36; /* Cor do texto do rodapé */
+    text-align: center; /* Centraliza o texto */
+    font-size: 14px; /* Tamanho da fonte */
+    border-top: 2px solid #c6a28c; /* Borda superior para separar do conteúdo acima */
+}
+
+/* Imagens */
+img {
+    max-width: 50%; /* Limita a largura máxima das imagens */
+    height: auto; /* Mantém a proporção das imagens */
+    display: block; /* Garante que a imagem seja exibida como bloco */
+    margin: 20px auto; /* Espaçamento ao redor da imagem */
+    border-radius: 15px; /* Bordas arredondadas nas imagens */
+    border: 5px solid #d5b29c; /* Adiciona uma borda ao redor da imagem */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra suave ao redor da imagem para dar um efeito de "quadro" */
+    width: 60%; /* Ajusta a largura da imagem, de forma a deixar uma margem em torno dela */
+    max-width: 150px; /* Largura máxima para não ultrapassar o tamanho da tela */
+}
+
+/* Títulos menores */
+h5, h6, h7 {
+    font-size: 15px; /* Mesmo tamanho do h2 para títulos menores */
+    font-weight: bold; /* Títulos em negrito */
+    color: #5a3e36; /* Cor do texto */
+}
+
+/* Seções separadas por bordas */
+section {
+    margin-bottom: 30px; /* Espaçamento abaixo da seção */
+    padding: 20px; /* Espaçamento interno na seção */
+    border: 2px solid #c6a28c; /* Borda para separar cada seção */
+    border-radius: 8px; /* Bordas arredondadas */
+    background-color: #ffffff; /* Cor de fundo branca para as seções */
+}
+/* Estilo para o Quiz */
+.quiz-container {
+    background: white; /* Cor de fundo branca para o quiz */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do container */
+    max-width: 600px; /* Largura máxima do quiz */
+    margin: 20px auto; /* Centraliza o quiz na página */
+    border: 2px solid #d5b29c; /* Borda para separar a área do quiz */
+}
+
+h2 {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    color: #5a3e36; /* Cor do título */
+}
+
+/* Container das perguntas */
+.question-container {
+    background: white; /* Cor de fundo branca para cada pergunta */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 15px; /* Espaçamento entre as perguntas */
+    border: 2px solid #d5b29c; /* Borda para separar cada pergunta */
+}
+
+.question {
+    font-weight: bold; /* Deixa a pergunta em negrito */
+    margin-bottom: 10px; /* Espaçamento abaixo da pergunta */
+}
+/* Container de botões de navegação */
+.navigation-buttons {
+    margin-bottom: 20px; /* Espaçamento abaixo dos botões */
+    text-align: center; /* Centraliza os botões */
+}
+
+.navigation-buttons button {
+    background-color: #f5e1da; /* Cor de fundo do botão */
+    color: #5a3e36; /* Cor do texto no botão */
+    border: 2px solid #d5b29c; /* Borda do botão */
+    padding: 10px 15px; /* Tamanho do botão */
+    margin: 5px; /* Espaçamento entre os botões */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: 0.3s; /* Efeito de transição */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Efeito ao passar o mouse nos botões */
+.navigation-buttons button:hover {
+    background-color: #eac8b4; /* Cor de fundo quando o mouse passa por cima */
+    color: #5a3e36; /* Cor do texto ao passar o mouse */
+}
+audio {
+    border: 2px solid #c6a28c; /* Adiciona uma borda fina */
+    border-radius: 8px; /* Arredonda as bordas */
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres da página (UTF-8) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a área visível da página para dispositivos móveis -->
+  <title>Calculadora de IMC</title> <!-- Título da página -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Link para o arquivo de estilos CSS -->
+</head>
+<body>
+  <!-- Container de botões para navegação -->
+  <div class="navigation-buttons">
+    <button onclick="location.href='portifolio.html'">Voltar para o menu</button> <!-- Botão para voltar ao menu -->
+    <button onclick="location.href='index.html'">Voltar para o início</button> <!-- Botão para voltar à página inicial -->
+  </div>
+
+  <section>
+    <h1>Calculadora de IMC</h1> <!-- Título principal da página -->
+
+    <p>Digite sua altura e peso para saber se você está no peso ideal.</p> <!-- Instrução para o usuário -->
+
+    <!-- Campo para digitar o peso -->
+    <input type="number" id="weight" placeholder="Peso (kg)" /> <!-- Campo onde o usuário insere o peso, com o placeholder indicando a unidade -->
+    
+    <!-- Campo para digitar a altura -->
+    <input type="number" id="height" placeholder="Altura (m)" step="0.01" /> <!-- Campo onde o usuário insere a altura, com o placeholder indicando a unidade e a precisão do valor -->
+
+    <!-- Botão para calcular o IMC -->
+    <button id="calculateButton">Calcular IMC</button> <!-- Botão que chama a função para calcular o IMC -->
+
+    <!-- Botão de novo cálculo, inicialmente oculto -->
+    <button id="newCalculationButton" style="display: none;">Novo cálculo</button> <!-- Botão para reiniciar o cálculo após exibir o resultado, inicialmente invisível -->
+
+    <!-- Área onde será exibido o resultado -->
+    <div id="result" style="display:none;"> <!-- Div que contém o resultado, inicialmente invisível -->
+      <p id="imcResult"></p> <!-- Exibe o valor do IMC -->
+      <p id="statusResult"></p> <!-- Exibe o status baseado no IMC (abaixo do peso, sobrepeso, etc.) -->
+    </div>
+  </section>
+
+  <script src="js/imc.js"></script> <!-- Link para o arquivo JavaScript, onde está a lógica do cálculo -->
+  <footer>
+    <p>&copy; 2025 - cacau_vict.</p> <!-- Rodapé com informações de copyright -->
+  </footer>
+</body>
+</html>

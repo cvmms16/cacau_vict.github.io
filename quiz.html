@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quiz Sobre Mim</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Importação do CSS para estilizar a página -->
+</head>
+
+<body>
+   <div class="navigation-buttons">
+  <!-- Botões de navegação -->
+  <button onclick="location.href='portifolio.html'">Voltar para o menu</button>
+  <button onclick="location.href='index.html'">Voltar para o início</button>
+   </div>
+  <div class="quiz-container">
+    <h2>Sobre mim</h2>
+    <div id="quiz">
+      
+      <!-- Cada bloco "question-container" representa uma pergunta do quiz -->
+      
+      <div class="question-container">
+        <p class="question">1. Em qual cidade eu nasci?</p>
+        <div class="options">
+          <!-- Cada botão representa uma opção de resposta -->
+          <button onclick="checkAnswer(this, false)">A) Água Preta</button>
+          <button onclick="checkAnswer(this, true)">B) Palmares</button>
+          <button onclick="checkAnswer(this, false)">C) Recife</button>
+          <button onclick="checkAnswer(this, false)">D) Caruaru</button>
+        </div>
+      </div>
+<br>
+      <!-- Outras perguntas seguem o mesmo padrão -->
+
+      <div class="question-container">
+        <p class="question">2. Quantos irmãos eu tenho?</p>
+        <div class="options">
+          <button onclick="checkAnswer(this, false)">A) 1</button>
+          <button onclick="checkAnswer(this, true)">B) 2</button>
+          <button onclick="checkAnswer(this, false)">C) 3</button>
+          <button onclick="checkAnswer(this, false)">D) Nenhuma das alternativas</button>
+        </div>
+      </div>
+<br>
+      <div class="question-container">
+        <p class="question">3. Qual o ano que eu nasci?</p>
+        <div class="options">
+          <button onclick="checkAnswer(this, false)">A) 08/02/2008</button>
+          <button onclick="checkAnswer(this, true)">B) 08/01/2009</button>
+          <button onclick="checkAnswer(this, false)">C) 09/04/2009</button>
+          <button onclick="checkAnswer(this, false)">D) Nenhuma das alternativas</button>
+        </div>
+      </div>
+<br>
+      <div class="question-container">
+        <p class="question">4. Em quais escolas eu já estudei?</p>
+        <div class="options">
+          <button onclick="checkAnswer(this, false)">A) Fernando Augusto Pinto Ribeiro e Dom Acácio Rodrigues Alves</button>
+          <button onclick="checkAnswer(this, false)">B) Escola Municipal Santa Luzia e Escola Crescer</button>
+          <button onclick="checkAnswer(this, true)">C) Escola Municipal Santa Luzia e IFPE</button>
+          <button onclick="checkAnswer(this, false)">D) Nenhuma das alternativas</button>
+        </div>
+      </div>
+<br>
+      <div class="question-container">
+        <p class="question">5. Qual é o meu animal favorito?</p>
+        <div class="options">
+          <button onclick="checkAnswer(this, true)">A) Gato</button>
+          <button onclick="checkAnswer(this, false)">B) Cachorro</button>
+          <button onclick="checkAnswer(this, false)">C) Pássaro</button>
+          <button onclick="checkAnswer(this, false)">D) Hamster</button>
+        </div>
+      </div>
+
+      <!-- Exibição do resultado -->
+      <p id="result"></p>
+
+      <!-- Botão para reiniciar o quiz -->
+      <button id="reset" onclick="resetQuiz()" style="display:none;">Recomeçar</button>
+
+      <!-- Botão para enviar as respostas -->
+      <button class="submit-button" onclick="submitAnswers()">Enviar Respostas</button>
+    </div>
+  </div>
+
+  <!-- Importação do JavaScript que controla o funcionamento do quiz -->
+  <script src="js/quiz.js"></script>
+  <footer>
+    <p>&copy; 2025 - cacau_vict.</p>
+  </footer>
+</body>
+
+</html>

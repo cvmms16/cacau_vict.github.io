@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <div class="navigation-buttons">
+    <button onclick="location.href='portifolio.html'">Voltar para portifólio</button>
+    <button onclick="location.href='index.html'">Voltar para o início</button>
+    <button onclick="location.href='conversores.html'">Voltar para o menu</button>
+     </div>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h2>Conversor de Moedas 💰</h2>
+
+        <!-- Campo para o valor a ser convertido -->
+        <label for="inputValue">Digite o valor:</label>
+        <input type="number" id="inputValue" placeholder="Valor">
+        <br>
+
+        <!-- Menu para selecionar a opção de conversão -->
+        <label for="convertOption">Escolha a conversão:</label>
+        <select id="convertOption">
+            <option value="usd-to-other">Dólar para outra moeda</option>
+            <option value="other-to-usd">Outra moeda para Dólar</option>
+        </select>
+        <br>
+
+        <!-- Menu para escolher a moeda de destino -->
+        <label for="currencyOption">Escolha a moeda:</label>
+        <select id="currencyOption">
+            <option value="eur">Euro (EUR)</option>
+            <option value="brl">Real (BRL)</option>
+            <option value="gbp">Libra Esterlina (GBP)</option>
+        </select>
+
+        <!-- Botão para realizar a conversão -->
+        <button id="convertButton" onclick="convert()">Converter</button>
+
+        <!-- Resultado da conversão -->
+        <p id="result"></p>
+
+        <!-- Div com o botão de resetar (inicialmente oculto) -->
+        <div id="resetDiv" style="display: none;">
+            <button onclick="resetCalculator()">Novo valor</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript separado -->
+    <script src="js/dolar.js"></script>
+    <footer>
+        <p>&copy; 2025 - cacau_vict.</p>
+    </footer>
+</body>
+</html>

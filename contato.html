@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informações de Contato</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- Barra de navegação com botões que redirecionam para outras páginas -->
+      <button onclick="location.href='index.html'">Inicio</button>
+      <button onclick="location.href='sobre.html'">Sobre</button>
+      <button onclick="location.href='portifolio.html'">Portfólio</button>
+    </nav>
+  </header>
+
+  <section>
+    <main>
+      <h2>Informações de Contato</h2>
+
+      <!-- Formulário para coletar informações de contato do usuário -->
+      <form id="contactForm">
+        <!-- Campo para inserir o nome -->
+        <label for="nome">Nome completo:</label>
+        <input id="nome" type="text" required><br>
+
+        <!-- Campo para inserir o email -->
+        <label for="email">Email:</label>
+        <input id="email" type="email" required><br>
+
+        <!-- Campo para inserir o contato -->
+        <label for="contato">Contato:</label>
+        <input id="contato" type="tel" required><br>
+
+        <!-- Campo para inserir o endereço -->
+        <label for="endereco">Endereço:</label>
+        <input id="endereco" type="text" required><br>
+
+        <!-- Campo para inserir a mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" required></textarea><br>
+
+        <!-- Botões para enviar ou apagar os dados do formulário -->
+        <button type="submit">Enviar</button> <!-- Botão de envio -->
+        <button type="reset">Apagar</button> <!-- Botão para apagar os dados -->
+      </form>
+
+      <p id="result"></p>
+      <!-- Parágrafo onde os dados inseridos serão exibidos após o envio -->
+
+      <p id="submissionStatus" style="display: none; color: green;"></p>
+      <!-- Parágrafo que exibirá uma mensagem de sucesso após o envio -->
+
+      <!-- Botão de novas informações (inicialmente invisível) -->
+      <button id="newSubmissionButton" style="display: none;" onclick="newSubmission()">Novas informações</button>
+    </main>
+  </section>
+
+  <!-- Links para redes sociais -->
+  <p>Email: <a href="mailto:cvmms@discente.ifpe.edu.br">cvmms@discente.ifpe.edu.br</a><br>
+      WhatsApp: <a href="https://wa.me/qr/FIBG75KOVNFHN1" target="_blank">Meu WhatsApp</a><br>
+      Instagram: <a href="https://www.instagram.com/cauanevict?igsh=YjNiejFlNmJtMXNk" target="_blank">Meu instagram</a>
+  </footer>
+  
+  <footer>
+    <p>&copy; 2025 - cacau_vict.</p>
+  </footer>
+
+  <!-- Referência ao arquivo JavaScript -->
+  <script src="js/contato.js"></script>
+</body>
+</html>

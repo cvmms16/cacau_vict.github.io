@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- Definindo o conjunto de caracteres da página para UTF-8, garantindo que caracteres especiais como acentos funcionem corretamente -->
+    <meta charset="UTF-8">
+
+    <!-- Definindo o comportamento responsivo da página em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <div class="navigation-buttons">
+    <button onclick="location.href='portifolio.html'">Voltar para portifólio</button>
+    <button onclick="location.href='index.html'">Voltar para o início</button>
+    <button onclick="location.href='conversores.html'">Voltar para o menu</button>
+    </div>
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Conversor de Unidades 📏</title>
+
+    <!-- Link para o arquivo de estilo CSS que será usado para estilizar a página -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Div que contém todos os elementos do conversor de unidades -->
+    <div class="converter-container">
+        <!-- Título do conversor -->
+        <h2>Conversor de Unidades</h2>
+
+        <!-- Label que descreve o campo de entrada de valor -->
+        <label for="inputValue">Digite o valor:</label>
+
+        <!-- Campo de entrada para o usuário digitar um valor numérico -->
+        <input type="number" id="inputValue" placeholder="Valor">
+
+        <!-- Label que descreve o campo de seleção da conversão -->
+        <label for="convertOption">Escolha a conversão:</label>
+
+        <!-- Menu suspenso para o usuário escolher qual conversão ele deseja realizar -->
+        <select id="convertOption">
+            <!-- Opção para converter de centímetros para metros -->
+            <option value="cm-to-m">Centímetros para Metros</option>
+            <!-- Opção para converter de metros para centímetros -->
+            <option value="m-to-cm">Metros para Centímetros</option>
+        </select>
+
+        <!-- Botão que chama a função 'convert()' para realizar a conversão quando clicado -->
+        <button id="convertButton" onclick="convert()">Converter</button>
+
+        <!-- Parágrafo onde o resultado da conversão será exibido -->
+        <p id="result"></p>
+
+        <!-- Div que contém o botão de resetar, inicialmente escondido -->
+        <div id="resetDiv" style="display: none;">
+            <button onclick="resetCalculator()">Novo valor</button>
+        </div>
+    </div>
+
+    <!-- Link para o arquivo JavaScript onde a lógica de conversão será executada -->
+    <script src="js/cm.js"></script>
+    <footer>
+        <p>&copy; 2025 - cacau_vict.</p>
+    </footer>
+</body>
+</html>

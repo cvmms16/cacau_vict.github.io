@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <!-- Título da página, visível na aba do navegador -->
+  <title>Calculadora</title>
+
+  <!-- Link para o arquivo CSS (estilos) -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <div class="navigation-buttons">
+  <!-- Botões para navegar entre páginas -->
+  <button onclick="location.href='portifolio.html'">Voltar para o menu</button>
+  <button onclick="location.href='index.html'">Voltar para o início</button>
+  </div>
+  <!-- Imagem que será exibida no topo da página -->
+  <img src="img/scooby.jpg" alt="Imagem de Scooby">
+
+  <!-- Título principal da página -->
+  <h1>Calculadora de Equações</h1>
+
+  <!-- Formulário que recebe os números e aciona a função de cálculo ao ser enviado -->
+  <form id="calcForm" onsubmit="event.preventDefault(); calculate();">
+    <!-- Rótulo e campo de entrada para o primeiro número -->
+    <label for="number1">Digite o primeiro número:</label>
+    <input type="number" id="number1" required><br><br>
+
+    <!-- Rótulo e campo de entrada para o segundo número -->
+    <label for="number2">Digite o segundo número:</label>
+    <input type="number" id="number2" required><br><br>
+
+    <!-- Botão de calcular -->
+    <button type="submit" id="calcButton">Calcular</button>
+  </form>
+
+  <!-- Div onde os resultados das operações matemáticas serão exibidos -->
+  <div id="resultEquation"></div>
+
+  <!-- Div que vai exibir o botão de resetar -->
+  <div id="resetDiv" style="display: none;">
+    <button onclick="resetCalculator()">Novas Equações</button>
+  </div>
+
+  <!-- Link para o arquivo JS, que contém a lógica da calculadora -->
+  <script src="js/calculadora.js"></script>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>&copy; 2025 - cacau_vict.</p>
+  </footer>
+</body>
+
+</html>
